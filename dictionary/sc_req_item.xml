@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="hasWorkflow=true" audit="true" create_roles="catalog_admin" extends="task" label="Requested Item" max_length="40" name="sc_req_item" sizeclass="2" text_index="true" type="collection">
+        <element attributes="encode_utf8=false" label="Component" max_length="32" name="x_58872_needit_component" reference="change_request" reference_qual="x_58872_needit_requested_itemISNOTEMPTY^EQ" reference_qual_condition="x_58872_needit_requested_itemISNOTEMPTY^EQ" type="reference"/>
         <element attributes="encode_utf8=false" label="Current CR" max_length="32" name="x_58872_needit_current_cr" read_only="true" reference="change_request" reference_qual="x_58872_needit_requested_itemISNOTEMPTY^EQ" reference_qual_condition="x_58872_needit_requested_itemISNOTEMPTY^EQ" type="reference"/>
     </element>
 </database>
